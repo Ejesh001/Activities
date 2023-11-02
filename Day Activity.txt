@@ -1,0 +1,31 @@
+Write a blog on Difference between HTTP1.1 vs HTTP2
+
+* In web communication, the transition from HTTP/1.1 to HTTP/2 is a significant milestone
+* One of the key limitations of HTTP/1.1 was its inability to efficiently handle multiple requests concurrently, leading to latency issues and slower page loading times. 
+* Additionally, it lacked support for header compression, which contributed to increased overhead and slower data transmission.
+* HTTP/2: Overcoming Limitations for Enhanced Performance
+* To address the constraints of HTTP/1.1, the Internet Engineering Task Force (IETF) introduced HTTP/2, a major revision of the HTTP network protocol. HTTP/2 was designed to improve the speed, efficiency, and overall performance of the web
+* One of the primary enhancements of HTTP/2 is its support for multiplexing, allowing multiple requests to be sent and received simultaneously over a single TCP connection. This feature significantly reduces latency and improves the overall loading speed of web pages.
+* Another notable improvement in HTTP/2 is the implementation of server push, which allows servers to proactively send resources to clients without explicit requests. This feature can be leveraged to preload essential resources, further enhancing the overall speed and performance of web applications.
+
+* Key Differences Between HTTP/1.1 and HTTP/2:
+1. Multiplexing: HTTP/2 supports multiplexing, allowing multiple requests to be sent and received concurrently over a single connection, improving overall performance.
+2. Header Compression: HTTP/2 employs header compression, reducing overhead and optimizing data transfer for improved efficiency.
+3. Server Push: HTTP/2 introduces server push, enabling servers to proactively send resources to clients, enhancing the loading speed of web applications.
+4. Binary Protocol: HTTP/2 uses a binary protocol for communication, unlike the text-based protocol of HTTP/1.1, enhancing parsing efficiency and reducing complexity.
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+Write a blog about objects and its internal representation in Javascript
+
+* objects play a fundamental role, serving as the building blocks for constructing complex data structures and applications. Understanding the internal representation of objects is crucial for grasping the mechanics behind their behavior and manipulation. This blog aims to delve into the internal representation of objects in JavaScript, shedding light on their key characteristics and nuances.
+* Objects: The Cornerstone of JavaScript's Data Structure
+* In JavaScript, objects are dynamic entities that encapsulate data and behavior. They are composed of properties, which are key-value pairs, and methods, which are functions associated with the object. Objects in JavaScript can be created using either the object literal notation or the constructor notation, providing flexibility and versatility in their implementation.
+* Internal Representation of Objects: A Closer Look
+* JavaScript implements objects using a combination of properties and internal methods. Each object has an internal property known as [[Prototype]], which points to another object. This concept is central to JavaScript's prototype-based inheritance model, allowing objects to inherit properties and methods from their prototypes.
+* Furthermore, the internal representation of objects in JavaScript can be understood through the lens of key data structures. Under the hood, objects are often implemented using hash tables or dictionaries, enabling efficient storage and retrieval of properties. Hash tables facilitate fast access to properties by using keys as indices, ensuring optimal performance in terms of search and retrieval operations.
+* In addition, JavaScript engines optimize object representation through various techniques such as hidden classes and inline caching. Hidden classes are used to speed up property access by assigning a specific class to each object based on its structure, allowing the engine to optimize property access and improve performance. Inline caching is employed to accelerate property access by caching the location of frequently accessed properties, minimizing the time needed for property resolution.
+* Manipulating Objects for Efficient Code Execution
+* Understanding the internal representation of objects empowers JavaScript developers to optimize code execution and enhance performance. By leveraging techniques such as property caching and minimizing property access, developers can improve the efficiency of their applications and reduce unnecessary computational overhead.
+* Moreover, developers can employ best practices such as object pooling and object reusability to minimize memory consumption and enhance the overall performance of their applications. These practices enable the efficient management of objects, preventing memory leaks and optimizing resource utilization.
+--------------------------------------------------------------------------------------------------------------------------------------
